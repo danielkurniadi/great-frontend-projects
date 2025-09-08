@@ -1,20 +1,65 @@
 {
-  "name": "great-frontend-projects",
+  "name": "@repo/root",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "dev": "dotenv -- turbo run dev",
+    "build": "dotenv -- turbo run build",
+    "lint": "dotenv -- turbo run lint",
+    "lint:fix": "dotenv -- turbo run lint:fix",
+    "test": "dotenv -- turbo run test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "typecheck": "dotenv -- turbo run typecheck",
+    "dev:marketing": "dotenv -- turbo dev --filter=marketing",
+    "build:marketing": "dotenv -- turbo build --filter=marketing",
+    "build:packages": "dotenv -- turbo run build --filter=./packages/*",
+    "clean": "turbo run clean && pnpm clean:cache && pnpm i",
+    "clean:cache": "find . \\( -name '.turbo' -o -name '.next' -o -name '.wrangler' -o -name 'dist' -o -name 'node_modules' \\) -type d -prune -exec rm -rf '{}' +",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "prettier": "^3.6.2",
-    "turbo": "^2.5.6",
+    "@commitlint/cli": "19.8.0",
+    "@commitlint/config-conventional": "19.8.0",
+    "@ls-lint/ls-lint": "^2.3.1",
+    "@typescript-eslint/eslint-plugin": "8.39.1",
+    "@typescript-eslint/parser": "8.14.0",
+    "commitlint-plugin-function-rules": "4.0.1",
+    "dotenv-cli": "10.0.0",
+    "eslint": "9.33.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-mdx": "^3.1.5",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-sort-destructure-keys": "^2.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-storybook": "^0.11.0",
+    "eslint-plugin-turbo": "^2.5.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "husky": "9.1.7",
+    "lint-staged": "15.4.3",
+    "prettier": "3.6.2",
+    "prettier-plugin-tailwindcss": "0.6.8",
+    "rimraf": "6.0.1",
+    "tsup": "8.4.0",
+    "tsx": "4.19.3",
+    "turbo": "2.5.6",
     "typescript": "5.9.2"
   },
-  "packageManager": "pnpm@9.0.0",
   "engines": {
-    "node": ">=18"
+    "pnpm": ">=10.x",
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.15.1",
+  "pnpm": {
+    "overrides": {
+      "@typescript-eslint/parser": "$@typescript-eslint/parser",
+      "@typescript-eslint/eslint-plugin": "$@typescript-eslint/eslint-plugin",
+      "eslint": "$eslint",
+      "typescript": "$typescript",
+      "react": "19.1.1",
+      "react-dom": "19.1.1"
+    }
   }
 }

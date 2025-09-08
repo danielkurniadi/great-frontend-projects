@@ -1,0 +1,9 @@
+ls:
+  '.ts': kebab-case | pointcase
+  '.d.ts': regex:[\w-.]+
+  '.tsx': kebab-case
+  '.test.ts': kebab-case
+
+ignore:
+  - node_modules
+  - .github

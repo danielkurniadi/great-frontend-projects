@@ -1,0 +1,26 @@
+.temp
+.next
+.swc
+.turbo
+.cache
+.build
+.vercel
+.changeset
+.DS_Store
+dist
+build
+public/*
+node_modules
+coverage
+__snapshots__
+pnpm-lock.yaml
+.cursorrules
+!public/manifest.json
+!.vscode
+!scripts
+!.*rc.js
+!.*.cjs
+!.*.mjs
+!.*.ts
+
+# Add more below ...

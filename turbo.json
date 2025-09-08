@@ -5,17 +5,21 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "build/**", ".vercel/**", "dist/**"]
     },
     "lint": {
       "dependsOn": ["^lint"]
     },
-    "check-types": {
-      "dependsOn": ["^check-types"]
+    "typecheck": {
+      "dependsOn": ["^typecheck"]
     },
     "dev": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
+    "clean": {
+      "cache": false
     }
   }
 }
