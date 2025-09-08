@@ -13,6 +13,10 @@
     "typecheck": {
       "dependsOn": ["^typecheck"]
     },
+    "test": {
+      "cache": true,
+      "dependsOn": ["^build"]
+    },
     "dev": {
       "cache": false,
       "persistent": true,

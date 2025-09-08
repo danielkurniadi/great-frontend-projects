@@ -11,6 +11,7 @@
     "typecheck": "dotenv -- turbo run typecheck",
     "dev:marketing": "dotenv -- turbo dev --filter=marketing",
     "build:marketing": "dotenv -- turbo build --filter=marketing",
+    "test:marketing": "dotenv -- turbo test --filter=marketing",
     "build:packages": "dotenv -- turbo run build --filter=./packages/*",
     "clean": "turbo run clean && pnpm clean:cache && pnpm i",
     "clean:cache": "find . \\( -name '.turbo' -o -name '.next' -o -name '.wrangler' -o -name 'dist' -o -name 'node_modules' \\) -type d -prune -exec rm -rf '{}' +",
