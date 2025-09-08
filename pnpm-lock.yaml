@@ -1504,8 +1504,8 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chalk@5.6.1:
-    resolution: {integrity: sha512-5b8G5vAwZY6ae5Vrp8HcIip49h0n88ASWNfK02h9aUjdPdhac481t5Ry7wXamd0gUvyK1KvS/dePAwAkEms4pw==}
+  chalk@5.6.0:
+    resolution: {integrity: sha512-46QrSQFyVSEyYAgQ22hQ+zDa60YHA4fBstHmtSApj1Y5vKtG27fWowW03jCk5KcbXEWPZUIR894aARCA/G1kfQ==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   character-entities-html4@2.1.0:
@@ -3389,8 +3389,8 @@ packages:
     resolution: {integrity: sha512-FC+lgizVPfie0kkhqUScwRu1O/lF6NOgJmlCgK+/LYxDCTk8sGelYaHDhFcDN+Sn3Cv+3VSa4Byeo+IMCzpMgQ==}
     engines: {node: '>=12'}
 
-  slice-ansi@7.1.1:
-    resolution: {integrity: sha512-XDlMeinV+EUYCSqueWO1VqYY/9c/WF6wynbx1gXEmv5C1hIEONxQ3WnrBGckEUDm86wOnKfS8T4SB5adFqGeqg==}
+  slice-ansi@7.1.0:
+    resolution: {integrity: sha512-bSiSngZ/jWeX93BqeIAbImyTbEihizcwNjFoRUIY/T1wWQsfsm2Vw1agPKylXvQTU7iASGdHhyqRlqQzfz+Htg==}
     engines: {node: '>=18'}
 
   source-map-js@1.2.1:
@@ -3889,8 +3889,8 @@ packages:
     resolution: {integrity: sha512-si7QWI6zUMq56bESFvagtmzMdGOtoxfR+Sez11Mobfc7tm+VkUckk9bW2UeffTGVUbOksxmSw0AA2gs8g71NCQ==}
     engines: {node: '>=12'}
 
-  wrap-ansi@9.0.1:
-    resolution: {integrity: sha512-n84lsZmcV2vUTRThlsxQhujZcDja2KIPCsEKZYP04cGtceS1vXTCboD7/zIJcZgEL9r3PdYrIX5KqX/DDWyMKw==}
+  wrap-ansi@9.0.0:
+    resolution: {integrity: sha512-G8ura3S+3Z2G+mkgNRq8dqaFZAuxfsxpBB8OCTGRTCtp+l/v9nbFNmCUP1BZMts3G1142MsZfn6eeUKrr4PD1Q==}
     engines: {node: '>=18'}
 
   y18n@5.0.8:
@@ -4084,7 +4084,7 @@ snapshots:
   '@commitlint/format@19.8.1':
     dependencies:
       '@commitlint/types': 19.8.1
-      chalk: 5.6.1
+      chalk: 5.6.0
 
   '@commitlint/is-ignored@19.8.1':
     dependencies:
@@ -4104,7 +4104,7 @@ snapshots:
       '@commitlint/execute-rule': 19.8.1
       '@commitlint/resolve-extends': 19.8.1
       '@commitlint/types': 19.8.1
-      chalk: 5.6.1
+      chalk: 5.6.0
       cosmiconfig: 9.0.0(typescript@5.9.2)
       cosmiconfig-typescript-loader: 6.1.0(@types/node@22.15.3)(cosmiconfig@9.0.0(typescript@5.9.2))(typescript@5.9.2)
       lodash.isplainobject: 4.0.6
@@ -4155,7 +4155,7 @@ snapshots:
   '@commitlint/types@19.8.1':
     dependencies:
       '@types/conventional-commits-parser': 5.0.1
-      chalk: 5.6.1
+      chalk: 5.6.0
 
   '@emnapi/runtime@1.4.5':
     dependencies:
@@ -5141,7 +5141,7 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  chalk@5.6.1: {}
+  chalk@5.6.0: {}
 
   character-entities-html4@2.1.0: {}
 
@@ -6330,7 +6330,7 @@ snapshots:
 
   lint-staged@15.4.3:
     dependencies:
-      chalk: 5.6.1
+      chalk: 5.6.0
       commander: 13.1.0
       debug: 4.4.1
       execa: 8.0.1
@@ -6350,7 +6350,7 @@ snapshots:
       eventemitter3: 5.0.1
       log-update: 6.1.0
       rfdc: 1.4.1
-      wrap-ansi: 9.0.1
+      wrap-ansi: 9.0.0
 
   load-plugin@6.0.3:
     dependencies:
@@ -6393,9 +6393,9 @@ snapshots:
     dependencies:
       ansi-escapes: 7.0.0
       cli-cursor: 5.0.0
-      slice-ansi: 7.1.1
+      slice-ansi: 7.1.0
       strip-ansi: 7.1.0
-      wrap-ansi: 9.0.1
+      wrap-ansi: 9.0.0
 
   longest-streak@3.1.0: {}
 
@@ -7328,7 +7328,7 @@ snapshots:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 4.0.0
 
-  slice-ansi@7.1.1:
+  slice-ansi@7.1.0:
     dependencies:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 5.1.0
@@ -7917,7 +7917,7 @@ snapshots:
       string-width: 5.1.2
       strip-ansi: 7.1.0
 
-  wrap-ansi@9.0.1:
+  wrap-ansi@9.0.0:
     dependencies:
       ansi-styles: 6.2.1
       string-width: 7.2.0
