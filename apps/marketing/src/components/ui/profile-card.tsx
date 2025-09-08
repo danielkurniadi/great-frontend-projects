@@ -9,7 +9,7 @@ export type ProfileCardProps = {
   jobTitle: string;
   headline: string;
   company: string;
-}
+};
 
 const socialLogos = [
   {
@@ -28,38 +28,47 @@ const socialLogos = [
     label: "twitter",
     logoImg: twitterLogo,
   },
-]
+];
 
-export const ProfileCard = ({profileImg, fullname, jobTitle, headline, company}: ProfileCardProps) => {
+export const ProfileCard = ({
+  profileImg,
+  fullname,
+  jobTitle,
+  headline,
+  company,
+}: ProfileCardProps) => {
   return (
-    <div className="card w-[340px] bg-white py-8 px-4 rounded-2xl overflow-hidden">
-      <div className="flex flex-col gap-6 items-center">
-        <img className="flex-none w-16 h-16 rounded-full" src={profileImg} alt="Profile" />
-        <div className="flex flex-col justify-between items-center gap-1">
+    <div className="card w-[340px] overflow-hidden rounded-2xl bg-white px-4 py-8">
+      <div className="flex flex-col items-center gap-6">
+        <img className="h-16 w-16 flex-none rounded-full" src={profileImg} alt="Profile" />
+        <div className="flex flex-col items-center justify-between gap-1">
           <span className="text-left text-xl font-medium text-neutral-900"> {fullname} </span>
-          <span className="text-left text-sm font-normal text-neutral-500"> {jobTitle + " @ " + company} </span>
+          <span className="text-left text-sm font-normal text-neutral-500">
+            {" "}
+            {jobTitle + " @ " + company}{" "}
+          </span>
         </div>
         <div>
-          <p className="font-light text-base text-center text-neutral-600">
-            {headline}
-          </p>
+          <p className="text-center text-base font-light text-neutral-600">{headline}</p>
         </div>
       </div>
-      <div className="flex flex-col gap-6 mt-10 items-center justify-start">
-        <button className="flex-initial bg-indigo-700 text-white py-3 px-1 rounded-lg w-full">Contact Me</button>
-        <div className="flex gap-10 justify-between items-center">
+      <div className="mt-10 flex flex-col items-center justify-start gap-6">
+        <button className="w-full flex-initial rounded-lg bg-indigo-700 px-1 py-3 text-white">
+          Contact Me
+        </button>
+        <div className="flex items-center justify-between gap-10">
           {socialLogos.map((item, idx) => {
             return (
               <img
                 key={`${item.label}-${idx}`}
-                className="w-5 h-5 items-center justify-center"
+                className="h-5 w-5 items-center justify-center"
                 src={item.logoImg}
                 alt={item.label}
               />
-            )
+            );
           })}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -5,15 +5,13 @@ type RootLayoutProps = {
   readonly children: ReactNode;
 };
 
-export const RootLayout = ({children}: RootLayoutProps) => {
+export const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <main>
-      <Navbar/>
-      <section>
-        {children}
-      </section>
+      <Navbar />
+      <section>{children}</section>
       {/* Footer */}
       {/* Cookie Consent */}
     </main>
-  )
-}
+  );
+};

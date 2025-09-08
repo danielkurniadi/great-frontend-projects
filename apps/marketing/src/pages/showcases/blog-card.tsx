@@ -7,15 +7,15 @@ const defaultCardData = {
   blogUrl: "#",
   title: "Top 5 Living Room Inspiration",
   summary: "Curated vibrants colours for your living, make it pop & calm in the same time",
-}
+};
 
 export const BlogCardShowCase = (cardData?: Partial<BlogCardProps>) => {
-  const mergedCardData = {...defaultCardData, ...cardData}
+  const mergedCardData = { ...defaultCardData, ...cardData };
   return (
     <section className={"flex flex-col items-center bg-gray-200"}>
-      <main className="overflow-x-auto mx-auto py-[200px] align-top items-center">
+      <main className="mx-auto items-center overflow-x-auto py-[200px] align-top">
         <BlogCard {...mergedCardData} />
       </main>
     </section>
-  )
-}
+  );
+};
