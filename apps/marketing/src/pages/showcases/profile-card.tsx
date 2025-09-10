@@ -12,7 +12,7 @@ const defaultCardData: ProfileCardProps = {
 
 export const ProfileCardShowcase = () => {
   return (
-    <section className="flex flex-col items-center bg-gray-200">
+    <section className="flex h-full flex-col items-center bg-gray-200">
       <div className="mx-auto items-center overflow-x-auto py-[200px] align-top">
         <ProfileCard {...defaultCardData} />
       </div>
