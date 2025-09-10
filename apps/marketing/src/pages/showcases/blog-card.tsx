@@ -13,7 +13,7 @@ export const BlogCardShowCase = (cardData?: Partial<BlogCardProps>) => {
   const mergedCardData = { ...defaultCardData, ...cardData };
   return (
     <section className={"flex flex-col items-center bg-gray-200"}>
-      <main className="mx-auto items-center overflow-x-auto py-[200px] align-top">
+      <main className="mx-auto items-center overflow-x-auto pt-[120px] align-top">
         <BlogCard {...mergedCardData} />
       </main>
     </section>
