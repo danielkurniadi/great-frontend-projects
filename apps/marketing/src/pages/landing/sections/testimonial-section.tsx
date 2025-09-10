@@ -7,9 +7,9 @@ export type TestimonialSectionsProps = {
 export const TestimonialSections = ({ testimonials }: TestimonialSectionsProps) => {
   return (
     <section className="container">
-      <div className="mb-16 flex flex-col items-center justify-center gap-3">
+      <div className="mx-8 mb-16 flex flex-col items-center justify-center gap-3 text-center">
         <h6 className="text-xl font-semibold text-indigo-700">Testimonials</h6>
-        <h1 className="text-5xl font-semibold">Countless users, countless smiles</h1>
+        <h1 className="text-3xl font-semibold md:text-5xl">Countless users, countless smiles</h1>
         <h6 className="text-xl font-normal text-neutral-600">
           Explore our community's journey and discover why satisfaction defines us.
         </h6>
@@ -19,7 +19,7 @@ export const TestimonialSections = ({ testimonials }: TestimonialSectionsProps) 
           return (
             <div
               key={`${testimonial.username}-${idx}`}
-              className="w-[384px] break-inside-avoid-column"
+              className="max-w-[340px] break-inside-avoid-column"
             >
               <TestimonialCard {...testimonial} />
             </div>

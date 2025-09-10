@@ -22,12 +22,12 @@ export const TestimonialCard = ({
         <div className="flex-auto">
           <div className="flex flex-col items-start justify-between">
             <span className="text-left text-lg font-semibold">{fullname}</span>
-            <span className="text-left text-sm font-normal text-neutral-600">{"@" + username}</span>
+            <span className="text-left text-sm font-light text-neutral-500">{"@" + username}</span>
           </div>
         </div>
       </div>
       <div className="w-full">
-        <p className="text-base font-normal text-neutral-600">{content}</p>
+        <p className="text-base font-light text-neutral-500">{content}</p>
       </div>
     </div>
   );
