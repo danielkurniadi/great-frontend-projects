@@ -81,7 +81,7 @@ const testimonials: TestimonialSectionsProps["testimonials"] = [
 
 export const TestimonialSectionsShowcase = () => {
   return (
-    <section className={"flex flex-col items-center bg-white"}>
+    <section className={"flex h-full flex-col items-center bg-white"}>
       <div className="mx-auto items-center overflow-x-auto p-24 align-top">
         <TestimonialSections testimonials={testimonials} />
       </div>
