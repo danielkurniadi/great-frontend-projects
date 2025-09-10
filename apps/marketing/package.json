@@ -36,5 +36,10 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
-  }
+  },
+  "engines": {
+    "pnpm": ">=10.x",
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.15.1"
 }

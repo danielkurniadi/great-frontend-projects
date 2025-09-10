@@ -7,6 +7,7 @@ import { TestimonialCardShowcase } from "~/pages/showcases/testimonial-card";
 import { TestimonialSectionsShowcase } from "./pages/showcases/testimonial-section";
 import { NavbarShowcase } from "./pages/showcases/navbar";
 
+// Change1
 function App() {
   return (
     <BrowserRouter>
