@@ -60,7 +60,7 @@ export const ProfileCard = ({
           {socialLogos.map((item, idx) => {
             return (
               <img
-                key={`${item.label}-${idx}`}
+                key={`profile-${item.label}-${idx}`}
                 className="h-5 w-5 items-center justify-center"
                 src={item.logoImg}
                 alt={item.label}
