@@ -42,7 +42,7 @@ const BaseFeaturesContent = ({
           : "justify-end-safe flex-col-reverse lg:flex-row-reverse",
       )}
     >
-      <div key="feature-ul" className="flex flex-col gap-10 self-stretch">
+      <div className="flex flex-col gap-10 self-stretch">
         {features.map((feature, idx) => {
           return (
             <div key={`feature-li-${idx}`} className="flex items-start gap-5">
