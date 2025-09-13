@@ -21,11 +21,12 @@
     "react-router-dom": "7.8.2",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.13",
+    "vite-plugin-svgr": "^4.5.0",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
     "@eslint/js": "^9.33.0",
+    "@repo/eslint-config": "workspace:*",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
