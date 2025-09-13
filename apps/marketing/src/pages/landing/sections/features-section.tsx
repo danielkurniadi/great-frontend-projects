@@ -7,6 +7,7 @@ import IconDropPercent from "~/assets/icons/drop-percent.svg?react";
 import IconRainbow from "~/assets/icons/rainbow.svg?react";
 import IconRocket from "~/assets/icons/rocket.svg?react";
 import IconP2P from "~/assets/icons/p2p-line.svg?react";
+import IconCopyright from "~/assets/icons/copyright.svg?react";
 
 import { cn } from "~/lib/utils";
 
@@ -144,7 +145,7 @@ export const FeaturesColorSection = () => {
           "Your single account can accommodate multiple users simultaneously downloading without any disruptions, streamlining teamwork and productivity.",
       },
       {
-        Icon: IconRainbow,
+        Icon: IconCopyright,
         title: "Royalty-free licensing",
         description:
           "Our straightforward, royalty-free licensing means your chosen images are yours to innovate with, without the hassle of negotiating usage rights for every new project.",

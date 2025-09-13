@@ -18,8 +18,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/showcase/features-section" element={<FeaturesGlassSection />} />
-        <Route path="/showcase/features-section/right" element={<FeaturesColorSection />} />
+        <Route path="/showcase/features-section" element={<FeaturesColorSection />} />
+        <Route path="/showcase/features-section/right" element={<FeaturesGlassSection />} />
         <Route path="/showcase/navbar" element={<NavbarShowcase />} />
         <Route path="/showcase/testimonial-card" element={<TestimonialCardShowcase />} />
         <Route path="/showcase/hero-section" element={<HeroSectionShowcase />} />
