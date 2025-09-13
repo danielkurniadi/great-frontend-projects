@@ -18,15 +18,19 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/showcase/features-section" element={<FeaturesColorSection />} />
-        <Route path="/showcase/features-section/right" element={<FeaturesGlassSection />} />
-        <Route path="/showcase/navbar" element={<NavbarShowcase />} />
-        <Route path="/showcase/testimonial-card" element={<TestimonialCardShowcase />} />
-        <Route path="/showcase/hero-section" element={<HeroSectionShowcase />} />
-        <Route path="/showcase/testimonial-section" element={<TestimonialSectionsShowcase />} />
-        <Route path="/showcase/blog-card" element={<BlogCardShowCase />} />
-        <Route path="/showcase/hero-feature-section" element={<HeroFeatureSectionShowcase />} />
-        <Route path="/showcase/profile-card" element={<ProfileCardShowcase />} />
+        <Route path="showcase">
+          <Route path="features-section">
+            <Route index element={<FeaturesColorSection />} />
+            <Route path="right" element={<FeaturesGlassSection />} />
+          </Route>
+          <Route path="navbar" element={<NavbarShowcase />} />
+          <Route path="testimonial-card" element={<TestimonialCardShowcase />} />
+          <Route path="hero-section" element={<HeroSectionShowcase />} />
+          <Route path="testimonial-section" element={<TestimonialSectionsShowcase />} />
+          <Route path="blog-card" element={<BlogCardShowCase />} />
+          <Route path="hero-feature-section" element={<HeroFeatureSectionShowcase />} />
+          <Route path="profile-card" element={<ProfileCardShowcase />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
