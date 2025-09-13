@@ -18,7 +18,7 @@ export const TestimonialSections = ({ testimonials }: TestimonialSectionsProps) 
         {testimonials.map((testimonial, idx) => {
           return (
             <div
-              key={`${testimonial.username}-${idx}`}
+              key={`testimonial-card-${testimonial.username}-${idx}`}
               className="max-w-[384px] break-inside-avoid-column"
             >
               <TestimonialCard {...testimonial} />

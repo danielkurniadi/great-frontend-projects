@@ -58,9 +58,9 @@ const MobileNav = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
         </button>
       </div>
       <div className="flex flex-1 flex-col gap-2">
-        {navigationLinks.map((link) => (
+        {navigationLinks.map((link, idx) => (
           <a
-            key={link.href}
+            key={`link-${idx}-${link.href}`}
             href={link.href}
             className="rounded px-3 py-2 text-sm font-normal text-neutral-900 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
           >
@@ -92,9 +92,9 @@ export const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden flex-1 items-center justify-between gap-24 xl:flex">
             <div className="flex gap-8">
-              {navigationLinks.map((link) => (
+              {navigationLinks.map((link, idx) => (
                 <a
-                  key={link.href}
+                  key={`link-${idx}-${link.href}`}
                   href={link.href}
                   className={cn(
                     "rounded px-0.5 py-1 font-medium text-neutral-600",
