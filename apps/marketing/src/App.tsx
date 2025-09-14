@@ -4,15 +4,16 @@ import { LandingPage } from "~/pages/landing/page";
 
 import { BlogCardShowCase } from "~/pages/showcase/blog-card";
 import { HeroFeatureSectionShowcase } from "~/pages/showcase/hero-feature-section";
-import { ProfileCardShowcase } from "~/pages/showcase/profile-card";
-import { TestimonialCardShowcase } from "~/pages/showcase/testimonial-card";
 import { HeroSectionShowcase } from "./pages/showcase/hero-simple-section";
-import { TestimonialSectionsShowcase } from "~/pages/showcase/testimonial-section";
 import { NavbarShowcase } from "~/pages/showcase/navbar";
+import { TestimonialCardShowcase } from "~/pages/showcase/testimonial-card";
+import { TestimonialSectionsShowcase } from "~/pages/showcase/testimonial-section";
+import { ProfileCardShowcase } from "~/pages/showcase/profile-card";
 import {
   FeaturesColorSectionShowcase,
   FeaturesGlassSectionShowcase,
 } from "~/pages/showcase/features-side-image-section";
+import { FeaturesGridSectionShowcase } from "./pages/showcase/features-grid-section";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route index element={<FeaturesColorSectionShowcase />} />
             <Route path="right" element={<FeaturesGlassSectionShowcase />} />
           </Route>
+          <Route path="feature-grid-section" element={<FeaturesGridSectionShowcase />} />
           <Route path="navbar" element={<NavbarShowcase />} />
           <Route path="testimonial-card" element={<TestimonialCardShowcase />} />
           <Route path="hero-section" element={<HeroSectionShowcase />} />
