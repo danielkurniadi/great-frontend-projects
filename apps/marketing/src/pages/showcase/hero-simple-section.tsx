@@ -1,4 +1,4 @@
-import { HeroSection } from "~/pages/landing/sections/hero-section";
+import { HeroSection } from "~/pages/landing/sections/hero-simple-section";
 
 export const HeroSectionShowcase = () => {
   return (

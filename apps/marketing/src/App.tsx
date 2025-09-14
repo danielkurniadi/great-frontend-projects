@@ -2,17 +2,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { LandingPage } from "~/pages/landing/page";
 
-import { BlogCardShowCase } from "~/pages/showcases/blog-card";
-import { HeroFeatureSectionShowcase } from "~/pages/showcases/hero-feature-section";
-import { ProfileCardShowcase } from "~/pages/showcases/profile-card";
-import { TestimonialCardShowcase } from "~/pages/showcases/testimonial-card";
-import { HeroSectionShowcase } from "./pages/showcases/hero-section";
-import { TestimonialSectionsShowcase } from "~/pages/showcases/testimonial-section";
-import { NavbarShowcase } from "~/pages/showcases/navbar";
+import { BlogCardShowCase } from "~/pages/showcase/blog-card";
+import { HeroFeatureSectionShowcase } from "~/pages/showcase/hero-feature-section";
+import { ProfileCardShowcase } from "~/pages/showcase/profile-card";
+import { TestimonialCardShowcase } from "~/pages/showcase/testimonial-card";
+import { HeroSectionShowcase } from "./pages/showcase/hero-simple-section";
+import { TestimonialSectionsShowcase } from "~/pages/showcase/testimonial-section";
+import { NavbarShowcase } from "~/pages/showcase/navbar";
 import {
   FeaturesColorSectionShowcase,
   FeaturesGlassSectionShowcase,
-} from "~/pages/showcases/feature-section";
+} from "~/pages/showcase/features-side-image-section";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         {/* Showcase pages for Great frontend submission */}
         <Route path="showcase">
-          <Route path="features-section">
+          <Route path="features-side-image-section">
             <Route index element={<FeaturesColorSectionShowcase />} />
             <Route path="right" element={<FeaturesGlassSectionShowcase />} />
           </Route>
