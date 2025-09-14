@@ -3,7 +3,7 @@
 import ColorSplashImg from "~/assets/landing/color-unsplash.png";
 import GlassSplashImg from "~/assets/landing/glass-unsplash.png";
 import IconHd from "~/assets/icons/hd.svg?react";
-import IconDropPercent from "~/assets/icons/drop-percent.svg?react";
+import IconDropPercent from "~/assets/icons/droplet-percent.svg?react";
 import IconRainbow from "~/assets/icons/rainbow.svg?react";
 import IconRocket from "~/assets/icons/rocket.svg?react";
 import IconP2P from "~/assets/icons/p2p-line.svg?react";
@@ -26,7 +26,7 @@ export type FeaturesSideImageSectionProps = {
   sectionHeader: string;
 };
 
-const BaseFeaturesSideImageSection = ({
+const FeaturesSideImageBaseSection = ({
   sectionTitle,
   sectionSubtitle,
   sectionHeader,
@@ -115,7 +115,7 @@ export const FeaturesSideGlassImageSection = () => {
     splashImgSide: "right",
     splashImgSrc: GlassSplashImg,
   };
-  return <BaseFeaturesSideImageSection {...featuresSectionProps} />;
+  return <FeaturesSideImageBaseSection {...featuresSectionProps} />;
 };
 
 export const FeaturesSideColorImageSection = () => {
@@ -147,5 +147,5 @@ export const FeaturesSideColorImageSection = () => {
     splashImgSide: "left",
     splashImgSrc: ColorSplashImg,
   };
-  return <BaseFeaturesSideImageSection {...featuresSectionProps} />;
+  return <FeaturesSideImageBaseSection {...featuresSectionProps} />;
 };
