@@ -14,6 +14,7 @@ import {
   FeaturesGlassSectionShowcase,
 } from "~/pages/showcase/features-side-image-section";
 import { FeaturesGridSectionShowcase } from "~/pages/showcase/features-grid-section";
+import { LogoMarqueeSectionShowcase } from "./pages/showcase/logo-marquee";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="blog-card" element={<BlogCardShowCase />} />
           <Route path="hero-feature-section" element={<HeroFeatureSectionShowcase />} />
           <Route path="profile-card" element={<ProfileCardShowcase />} />
+          <Route path="logo-marquee" element={<LogoMarqueeSectionShowcase />} />
         </Route>
       </Routes>
     </BrowserRouter>
