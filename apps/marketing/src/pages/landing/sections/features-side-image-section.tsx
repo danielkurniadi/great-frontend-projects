@@ -11,69 +11,29 @@ import IconCopyright from "~/assets/icons/copyright.svg?react";
 
 import { cn } from "~/lib/utils";
 
-export type FeaturesSectionData = {
+export type FeatureItem = {
   Icon: typeof IconHd;
   title: string;
   description: string;
 };
 
-export type FeaturesContentProps = {
-  features: FeaturesSectionData[];
+export type FeaturesSideImageSectionProps = {
+  features: FeatureItem[];
   splashImgSide: "left" | "right";
   splashImgSrc: string;
-};
-
-export type FeaturesSectionProps = FeaturesContentProps & {
   sectionTitle: string;
   sectionSubtitle: string;
   sectionHeader: string;
 };
 
-const BaseFeaturesContent = ({
-  features,
-  splashImgSrc,
-  splashImgSide = "right",
-}: FeaturesContentProps) => {
-  return (
-    <div
-      className={cn(
-        "content flex justify-between gap-12 self-stretch lg:flex-row lg:gap-8",
-        splashImgSide === "right"
-          ? "flex-col lg:flex-row"
-          : "justify-end-safe flex-col-reverse lg:flex-row-reverse",
-      )}
-    >
-      <div className="flex flex-col gap-10 self-stretch">
-        {features.map((feature, idx) => {
-          return (
-            <div key={`feature-li-${idx}`} className="flex items-start gap-5">
-              <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-sm">
-                <feature.Icon className="h-6 w-6 text-indigo-700" />
-              </div>
-              <div className="flex grow flex-col justify-center gap-2 py-2.5">
-                <span className="text-lg font-semibold text-neutral-900">{feature.title}</span>
-                <span className="text-base font-normal text-neutral-600">
-                  {feature.description}
-                </span>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-      <img
-        className="rounded-xl lg:aspect-video lg:max-h-[460px] lg:max-w-[640px]"
-        src={splashImgSrc}
-      />
-    </div>
-  );
-};
-
-const BaseFeaturesSection = ({
+const BaseFeaturesSideImageSection = ({
   sectionTitle,
   sectionSubtitle,
   sectionHeader,
-  ...props
-}: FeaturesSectionProps) => {
+  splashImgSide,
+  splashImgSrc,
+  features,
+}: FeaturesSideImageSectionProps) => {
   return (
     <div className="w-full self-stretch bg-white px-3 py-12 lg:p-24">
       <div className="container mx-auto flex max-w-[1440px] flex-col items-center justify-center gap-12 self-stretch rounded-lg lg:gap-16">
@@ -91,14 +51,43 @@ const BaseFeaturesSection = ({
           </span>
         </div>
 
-        <BaseFeaturesContent {...props} />
+        <div
+          className={cn(
+            "content flex justify-between gap-12 self-stretch lg:flex-row lg:gap-8",
+            splashImgSide === "right"
+              ? "flex-col lg:flex-row"
+              : "justify-end-safe flex-col-reverse lg:flex-row-reverse",
+          )}
+        >
+          <div className="flex flex-col gap-10 self-stretch">
+            {features.map((feature, idx) => {
+              return (
+                <div key={`feature-li-${idx}`} className="flex items-start gap-5">
+                  <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-sm">
+                    <feature.Icon className="h-6 w-6 text-indigo-700" />
+                  </div>
+                  <div className="flex grow flex-col justify-center gap-2 py-2.5">
+                    <span className="text-lg font-semibold text-neutral-900">{feature.title}</span>
+                    <span className="text-base font-normal text-neutral-600">
+                      {feature.description}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <img
+            className="rounded-xl lg:aspect-video lg:max-h-[460px] lg:max-w-[640px]"
+            src={splashImgSrc}
+          />
+        </div>
       </div>
     </div>
   );
 };
 
-export const FeaturesGlassSection = () => {
-  const featuresSectionProps: FeaturesSectionProps = {
+export const FeaturesSideGlassImageSection = () => {
+  const featuresSectionProps: FeaturesSideImageSectionProps = {
     features: [
       {
         Icon: IconHd,
@@ -126,11 +115,11 @@ export const FeaturesGlassSection = () => {
     splashImgSide: "right",
     splashImgSrc: GlassSplashImg,
   };
-  return <BaseFeaturesSection {...featuresSectionProps} />;
+  return <BaseFeaturesSideImageSection {...featuresSectionProps} />;
 };
 
-export const FeaturesColorSection = () => {
-  const featuresSectionProps: FeaturesSectionProps = {
+export const FeaturesSideColorImageSection = () => {
+  const featuresSectionProps: FeaturesSideImageSectionProps = {
     features: [
       {
         Icon: IconRocket,
@@ -158,5 +147,5 @@ export const FeaturesColorSection = () => {
     splashImgSide: "left",
     splashImgSrc: ColorSplashImg,
   };
-  return <BaseFeaturesSection {...featuresSectionProps} />;
+  return <BaseFeaturesSideImageSection {...featuresSectionProps} />;
 };
