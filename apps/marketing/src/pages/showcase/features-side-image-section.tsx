@@ -5,16 +5,16 @@ import {
 
 export const FeaturesGlassSectionShowcase = () => {
   return (
-    <section>
-      <FeaturesSideColorImageSection />
+    <section className="lg:max-[1440px] mx-auto p-4">
+      <FeaturesSideGlassImageSection />
     </section>
   );
 };
 
 export const FeaturesColorSectionShowcase = () => {
   return (
-    <section>
-      <FeaturesSideGlassImageSection />
+    <section className="lg:max-[1440px] mx-auto p-4">
+      <FeaturesSideColorImageSection />
     </section>
   );
 };
