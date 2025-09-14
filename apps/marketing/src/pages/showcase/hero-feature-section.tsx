@@ -2,7 +2,7 @@ import { HeroFeatureSection } from "~/pages/features/sections/hero-feature-secti
 
 export const HeroFeatureSectionShowcase = () => {
   return (
-    <section className="mt-8 flex h-full flex-col bg-white">
+    <section className="flex h-full flex-col bg-gray-50 p-4">
       <div className="mx-auto overflow-auto align-top">
         <HeroFeatureSection />
       </div>
