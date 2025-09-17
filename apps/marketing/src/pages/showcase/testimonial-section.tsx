@@ -1,17 +1,17 @@
 import {
   TestimonialSections,
   type TestimonialSectionsProps,
-} from "~/pages/landing/sections/testimonial-section";
+} from "~/features/marketing/components/testimonial-section/testimonial-section";
 
-import profileSarahDole from "~/assets/profile-pics/profile-sarahdole.jpg";
-import profileJohnAseed from "~/assets/profile-pics/profile-johnaseed.jpg";
-import profileJeniic from "~/assets/profile-pics/profile-jeniic.jpg";
-import profileJakeJohnson from "~/assets/profile-pics/profile-jakejohnson.jpg";
-import profileMThompson from "~/assets/profile-pics/profile-mthompson.jpg";
-import profileIgoStrav from "~/assets/profile-pics/profile-igorstrav.jpg";
-import profileDrice from "~/assets/profile-pics/profile-drice.jpg";
-import profileOliverNever from "~/assets/profile-pics/profile-marked.jpg";
-import profileMDennis from "~/assets/profile-pics/profile-marked.jpg";
+import profileSarahDole from "~/features/forum/assets/profile/profile-sarahdole.jpg";
+import profileJohnAseed from "~/features/forum/assets/profile/profile-johnaseed.jpg";
+import profileJeniic from "~/features/forum/assets/profile/profile-jeniic.jpg";
+import profileJakeJohnson from "~/features/forum/assets/profile/profile-jakejohnson.jpg";
+import profileMThompson from "~/features/forum/assets/profile/profile-mthompson.jpg";
+import profileIgoStrav from "~/features/forum/assets/profile/profile-igorstrav.jpg";
+import profileDrice from "~/features/forum/assets/profile/profile-drice.jpg";
+import profileOliverNever from "~/features/forum/assets/profile/profile-marked.jpg";
+import profileMDennis from "~/features/forum/assets/profile/profile-marked.jpg";
 
 const testimonials: TestimonialSectionsProps["testimonials"] = [
   {

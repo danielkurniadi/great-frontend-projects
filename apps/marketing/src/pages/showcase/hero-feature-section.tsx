@@ -1,4 +1,4 @@
-import { HeroFeatureSection } from "~/pages/features/sections/hero-feature-section";
+import { HeroFeatureSection } from "~/features/marketing/components/hero-feature-section/hero-feature-section";
 
 export const HeroFeatureSectionShowcase = () => {
   return (

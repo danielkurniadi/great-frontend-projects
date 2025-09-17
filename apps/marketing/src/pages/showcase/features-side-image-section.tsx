@@ -1,7 +1,7 @@
 import {
   FeaturesSideColorImageSection,
   FeaturesSideGlassImageSection,
-} from "~/pages/landing/sections/features-side-image-section";
+} from "~/features/marketing/components/features-side-img-section/features-side-img-section";
 
 export const FeaturesGlassSectionShowcase = () => {
   return (

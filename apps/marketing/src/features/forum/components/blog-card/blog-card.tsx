@@ -16,22 +16,6 @@ export const BlogCard = ({
   title,
   summary,
 }: BlogCardProps) => {
-  // const navigate = useNavigate();
-
-  // const handleRedirectBlogUrl = (url: string) => {
-  //   try {
-  //     // This is a full URL (could be external).
-  //     new URL(url);
-  //     window.location.href = url;
-  //   } catch (_) {
-  //     // This is a path of a URL within this app domain.
-  //     const urlPath = url;
-  //     if (urlPath.startsWith("/") || !urlPath.includes(":")) {
-  //       navigate(urlPath);
-  //     }
-  //   }
-  // };
-
   return (
     <div className="card w-[340px] overflow-hidden rounded-2xl bg-white">
       <img className="max-h-72 w-full object-cover" src={thumbnailImg} alt="blog-card-unsplash" />

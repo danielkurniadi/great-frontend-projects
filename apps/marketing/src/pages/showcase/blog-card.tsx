@@ -1,4 +1,4 @@
-import { BlogCard, type BlogCardProps } from "~/components/ui/blog-card";
+import { BlogCard, type BlogCardProps } from "~/features/forum/components/blog-card/";
 import blogCardThumbnail from "~/assets/blog-card/thumbnail-unsplash.jpg";
 
 const defaultCardData = {

@@ -1,4 +1,4 @@
-import { Navbar } from "~/components/layout/navbar";
+import { Navbar } from "~/features/marketing/components/navbar/navbar";
 
 export const NavbarShowcase = () => {
   return (

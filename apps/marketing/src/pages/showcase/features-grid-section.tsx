@@ -1,4 +1,4 @@
-import { FeaturesGridSection } from "~/pages/landing/sections/features-grid-section";
+import { FeaturesGridSection } from "~/features/marketing/components/features-grid-section/features-grid-section";
 
 export const FeaturesGridSectionShowcase = () => {
   return (

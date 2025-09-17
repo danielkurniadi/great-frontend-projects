@@ -1,4 +1,4 @@
-import { PricingSimpleSection } from "~/components/sections/pricing-single-section";
+import { PricingSimpleSection } from "~/features/marketing/components/pricing-single-section/pricing-single-section";
 
 export const PricingSimpleSectionShowcase = () => {
   return (

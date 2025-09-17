@@ -1,4 +1,4 @@
-import { LogoMarqueeSection } from "../landing/sections/logo-marquee";
+import { LogoMarqueeSection } from "../../features/marketing/components/logo-marquee/logo-marquee";
 
 export const LogoMarqueeSectionShowcase = () => {
   return (

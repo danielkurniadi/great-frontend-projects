@@ -1,5 +1,8 @@
-import { ProfileCard, type ProfileCardProps } from "~/components/ui/profile-card";
-import profileImg from "~/assets/profile-pics/profile-sarahdole.jpg";
+import {
+  ProfileCard,
+  type ProfileCardProps,
+} from "~/features/forum/components/profile-card/profile-card";
+import profileImg from "~/features/forum/assets/profile/profile-sarahdole.jpg";
 
 const defaultCardData: ProfileCardProps = {
   profileImg,

@@ -1,8 +1,6 @@
 import { RiCheckLine } from "@remixicon/react";
 
 export const PricingSimpleSection = () => {
-  // Showcase layout: <div className="flex w-screen w-[768px] md:? lg:w-[1440px] flex-col bg-gradient-to-b from-gray-50 to-[#d2d6db]"> */}
-
   const listItemTexts = [
     "128 available credits for all images",
     "Up to 3 users",

@@ -1,4 +1,7 @@
-import { TestimonialCard, type TestimonialCardProps } from "~/components/ui/testimonial-card";
+import {
+  TestimonialCard,
+  type TestimonialCardProps,
+} from "~/features/marketing/components/testimonial-card/testimonial-card";
 
 export type TestimonialSectionsProps = {
   testimonials: TestimonialCardProps[];
