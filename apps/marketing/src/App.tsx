@@ -15,6 +15,7 @@ import {
 } from "~/pages/showcase/features-side-image-section";
 import { FeaturesGridSectionShowcase } from "~/pages/showcase/features-grid-section";
 import { LogoMarqueeSectionShowcase } from "./pages/showcase/logo-marquee";
+import { PricingSimpleSectionShowcase } from "./pages/showcase/pricing-single-section";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route index element={<FeaturesColorSectionShowcase />} />
             <Route path="right" element={<FeaturesGlassSectionShowcase />} />
           </Route>
+          <Route path="pricing-single-section" element={<PricingSimpleSectionShowcase />} />
           <Route path="features-grid-section" element={<FeaturesGridSectionShowcase />} />
           <Route path="navbar" element={<NavbarShowcase />} />
           <Route path="testimonial-card" element={<TestimonialCardShowcase />} />
