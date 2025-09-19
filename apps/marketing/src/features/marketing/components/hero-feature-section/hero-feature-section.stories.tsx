@@ -10,7 +10,7 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <section className="flex h-full min-h-screen flex-col bg-gray-500 p-4">
+      <section className="flex h-full min-h-screen flex-col bg-gray-50 p-4">
         <div className="mx-auto align-top">
           <Story />
         </div>
