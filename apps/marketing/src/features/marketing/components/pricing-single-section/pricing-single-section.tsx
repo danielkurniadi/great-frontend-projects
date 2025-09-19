@@ -9,7 +9,7 @@ export const PricingSimpleSection = () => {
   ];
 
   return (
-    <section className="flex grow flex-col justify-center self-stretch rounded-md bg-white">
+    <div className="flex grow flex-col justify-center self-stretch rounded-md bg-white">
       <div className="flex flex-col items-center self-stretch px-3 py-12 md:px-4 md:py-16 lg:p-24">
         <div className="flex flex-col items-center gap-16 self-stretch">
           <div className="flex flex-col items-center self-stretch">
@@ -28,7 +28,7 @@ export const PricingSimpleSection = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center gap-8 self-stretch lg:flex-row lg:items-center">
+          <div className="mx-auto flex flex-col justify-center gap-8 self-stretch lg:w-[1216px] lg:flex-row">
             <div className="flex w-fit grow flex-col gap-8 lg:w-[311px] lg:gap-12">
               <div className="flex flex-col gap-8 self-stretch md:gap-16">
                 <span className="text-2xl font-semibold text-neutral-900 md:text-4xl lg:text-4xl">
@@ -85,6 +85,6 @@ export const PricingSimpleSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
