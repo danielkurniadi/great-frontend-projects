@@ -18,7 +18,8 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   className?: string;
 };
 
-// Reusable Button Component for consistency
+// Reusable Button Component for consistency.
+// TODO: Maybe put it in root packages/ui or ~/components/ui
 const Button = ({ variant = "secondary", className = "", children, ...props }: ButtonProps) => {
   const baseClasses =
     "h-11 w-full justify-center rounded px-4 py-2.5 text-base font-medium focus:outline-none focus:ring-4 focus:ring-indigo-500/20";
@@ -81,8 +82,8 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <>
-      <header className="mx-auto h-[68px] max-w-[1216px] px-8 md:px-4 xl:px-0">
+    <div className="sticky left-0 top-0 w-full">
+      <header className="mx-auto h-[68px] px-4 pt-4 md:px-8 lg:px-28">
         <div className="flex h-full items-center justify-between lg:gap-20">
           {/* Logo */}
           <a href="#" className="h-8 w-28" aria-label="Go to home page">
@@ -133,6 +134,6 @@ export const Navbar = () => {
         </div>
       </header>
       <MobileNav isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
-    </>
+    </div>
   );
 };

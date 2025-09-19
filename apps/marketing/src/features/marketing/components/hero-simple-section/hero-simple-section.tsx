@@ -1,8 +1,8 @@
-import heroImg from "~/assets/landing/hero-banner.png";
+import heroImg from "~/features/marketing/assets/hero-banner.png";
 
 export const HeroSection = () => {
   return (
-    <section className="rounded-md bg-gray-50 px-4 py-12 md:p-16 lg:p-24">
+    <div className="rounded-md bg-white px-4 py-12 md:p-16 lg:p-24">
       <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-8">
         <div className="flex flex-col justify-start gap-8">
           <div className="flex flex-col justify-center gap-4 self-stretch lg:gap-6">
@@ -26,6 +26,6 @@ export const HeroSection = () => {
           <img className="object-cover" src={heroImg} alt="/" />
         </div>
       </div>
-    </section>
+    </div>
   );
 };

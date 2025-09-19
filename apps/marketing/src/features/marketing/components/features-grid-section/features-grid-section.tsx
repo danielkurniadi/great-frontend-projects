@@ -12,10 +12,10 @@ export type FeatureItem = {
 };
 
 export type FeaturesGridSectionProps = {
-  features: FeatureItem[];
-  sectionTitle: string;
-  sectionSubtitle: string;
-  sectionHeader: string;
+  features?: FeatureItem[];
+  sectionTitle?: string;
+  sectionSubtitle?: string;
+  sectionHeader?: string;
 };
 
 const defaultProps: FeaturesGridSectionProps = {
@@ -61,7 +61,7 @@ const defaultProps: FeaturesGridSectionProps = {
   ],
 };
 
-export const FeaturesGridSection = (props?: Partial<FeaturesGridSectionProps>) => {
+export const FeaturesGridSection = (props: FeaturesGridSectionProps) => {
   const { sectionTitle, sectionSubtitle, sectionHeader, features } = { ...props, ...defaultProps };
 
   return (
@@ -82,7 +82,7 @@ export const FeaturesGridSection = (props?: Partial<FeaturesGridSectionProps>) =
       </div>
 
       <div className="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
-        {features.map((feature, idx) => (
+        {features?.map((feature, idx) => (
           <div
             key={`feature-grid-item-${idx}`}
             className="md:max-w-84 flex flex-none flex-col items-center gap-5 self-start lg:max-w-96"

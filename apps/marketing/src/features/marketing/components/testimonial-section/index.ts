@@ -1,1 +1,4 @@
-export { TestimonialSections, type TestimonialSectionsProps } from "./testimonial-section";
+export {
+  TestimonialSection as TestimonialSections,
+  type TestimonialSectionsProps,
+} from "./testimonial-section";

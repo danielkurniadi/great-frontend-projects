@@ -1,5 +1,5 @@
-import { BlogCard, type BlogCardProps } from "~/features/forum/components/blog-card/";
-import blogCardThumbnail from "~/assets/blog-card/thumbnail-unsplash.jpg";
+import { BlogCard, type BlogCardProps } from "~/features/forum/components/blog-card";
+import blogCardThumbnail from "~/features/forum/assets/blog/thumbnail-unsplash.jpg";
 
 const defaultCardData = {
   thumbnailImg: blogCardThumbnail,

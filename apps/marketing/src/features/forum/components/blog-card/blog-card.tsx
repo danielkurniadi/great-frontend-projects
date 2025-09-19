@@ -1,20 +1,25 @@
 import { RiArrowRightLine } from "@remixicon/react";
-// import { useNavigate } from "react-router-dom";
+import thumbnailBlogPost from "~/features/forum/assets/blog/thumbnail-unsplash.jpg";
 
 export type BlogCardProps = {
-  thumbnailImg: string;
-  badges: string[];
-  blogUrl: string;
-  title: string;
-  summary: string;
+  /**Thumbnail image of the blog post */
+  thumbnailImg?: string;
+  /** Badge labels' texts - for now colour is only green-700 */
+  badges?: string[];
+  /** URL of the blog post */
+  blogUrl?: string;
+  /** Title of the blog post */
+  title?: string;
+  /** Summary of the blog post */
+  summary?: string;
 };
 
 export const BlogCard = ({
-  thumbnailImg,
-  badges,
+  thumbnailImg = thumbnailBlogPost,
+  badges = ["Interior"],
   blogUrl = "#",
-  title,
-  summary,
+  title = "Top 5 Living Room Inspiration",
+  summary = "Curated vibrants colours for your living, make it pop & calm at the same time",
 }: BlogCardProps) => {
   return (
     <div className="card w-[340px] overflow-hidden rounded-2xl bg-white">

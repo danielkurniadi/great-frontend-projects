@@ -1,18 +1,28 @@
+import defaultImg from "~/features/forum/assets/profile/profile-sarahdole.jpg";
+
 export type TestimonialCardProps = {
-  profileImg: string;
-  fullname: string;
-  username: string;
-  content: string;
+  /** Profile image of the user */
+  profileImg?: string;
+  /** Full name of the user */
+  fullname?: string;
+  /** Username handle of the user */
+  username?: string;
+  /** Description of the testimony */
+  content?: string;
 };
 
+const defaultDescription = `
+I've been searching for high-quality abstract images for my design projects, an I'm thrilled to have found this platform.
+The variety and depth of creativity are astounding!`;
+
 export const TestimonialCard = ({
-  profileImg,
-  fullname,
-  username,
-  content,
+  profileImg = defaultImg,
+  fullname = "Sarah Dole",
+  username = "sarahdole",
+  content = defaultDescription,
 }: TestimonialCardProps) => {
   return (
-    <div className="flex flex-col items-start gap-4 rounded-lg border-[1px] border-gray-200 bg-white p-6 shadow-sm">
+    <div className="flex w-[340px] flex-col items-start gap-4 rounded-lg border-[1px] border-gray-200 bg-white p-6 shadow-sm">
       <div className="flex justify-start gap-4 self-stretch align-middle">
         <img
           className="h-12 w-12 flex-none rounded-full"

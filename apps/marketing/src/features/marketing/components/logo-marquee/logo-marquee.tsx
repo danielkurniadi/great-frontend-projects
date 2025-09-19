@@ -56,13 +56,13 @@ const LogosSegment = ({
 }) => {
   return (
     <div
-      className="animate-marquee group-hover::paused flex gap-20 py-[2px] group-hover:bg-yellow-200 md:gap-2 md:p-0 lg:gap-8"
+      className="animate-marquee group-hover:paused flex gap-20 py-[2px] md:gap-2 md:p-0 lg:gap-8"
       aria-hidden={ariaHidden ?? "false"}
     >
       {logoImages.map((item, idx) => (
         <img
           key={`logo-img-${idx}`}
-          className="h-auto w-[218px] max-w-none"
+          className="hover:paused h-auto w-[218px] max-w-none"
           src={item.src}
           loading="lazy"
           alt={item.alt}
@@ -78,7 +78,6 @@ export const LogoMarqueeSection = () => {
       aria-describedby="logo-marquee-section"
       className="my-64 w-full rounded bg-white px-0 py-1 md:rounded-md md:px-2"
     >
-      {/* md:my-[356px]  lg:my-48*/}
       <div className="flex flex-col gap-8 px-4 py-12 md:py-16 lg:py-24">
         <h2 className="text-center text-base font-medium text-neutral-600">
           Used by teams that you love

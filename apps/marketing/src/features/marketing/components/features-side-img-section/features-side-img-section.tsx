@@ -1,13 +1,14 @@
 /// <reference types="vite-plugin-svgr/client" />
 
-import ColorSplashImg from "~/assets/landing/color-unsplash.png";
-import GlassSplashImg from "~/assets/landing/glass-unsplash.png";
 import IconHd from "~/assets/icons/hd.svg?react";
 import IconDropPercent from "~/assets/icons/droplet-percent.svg?react";
 import IconRainbow from "~/assets/icons/rainbow.svg?react";
 import IconRocket from "~/assets/icons/rocket.svg?react";
 import IconP2P from "~/assets/icons/p2p-line.svg?react";
 import IconCopyright from "~/assets/icons/copyright.svg?react";
+
+import ColorSplashImg from "~/features/marketing/assets/color-unsplash.png";
+import GlassSplashImg from "~/features/marketing/assets/glass-unsplash.png";
 
 import { cn } from "~/lib/utils";
 
@@ -18,21 +19,27 @@ export type FeatureItem = {
 };
 
 export type FeaturesSideImageSectionProps = {
-  features: FeatureItem[];
-  splashImgSide: "left" | "right";
-  splashImgSrc: string;
-  sectionTitle: string;
-  sectionSubtitle: string;
-  sectionHeader: string;
+  /** Featured selling point to be listed */
+  features?: FeatureItem[];
+  /** Splash image position, left or right of the page section */
+  splashImgSide?: "left" | "right";
+  /** Splash image source */
+  splashImgSrc?: string;
+  /** Title of the section */
+  sectionTitle?: string;
+  /** Subtitle of the section */
+  sectionSubtitle?: string;
+  /** Headline of the section */
+  sectionHeader?: string;
 };
 
-const FeaturesSideImageBaseSection = ({
-  sectionTitle,
-  sectionSubtitle,
-  sectionHeader,
-  splashImgSide,
-  splashImgSrc,
-  features,
+export const FeaturesSideImageSection = ({
+  sectionTitle = "Title",
+  sectionSubtitle = "Subtitle",
+  sectionHeader = "Headline to put in section...",
+  splashImgSide = "left",
+  splashImgSrc = ColorSplashImg,
+  features = [],
 }: FeaturesSideImageSectionProps) => {
   return (
     <div className="self-stretch rounded-lg bg-white px-3 py-12 md:px-4 md:py-16 lg:p-24">
@@ -60,7 +67,7 @@ const FeaturesSideImageBaseSection = ({
           )}
         >
           <div className="flex flex-col gap-10 self-stretch">
-            {features.map((feature, idx) => {
+            {features?.map((feature, idx) => {
               return (
                 <div key={`feature-li-${idx}`} className="flex items-start gap-5">
                   <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-sm">
@@ -115,7 +122,7 @@ export const FeaturesSideGlassImageSection = () => {
     splashImgSide: "right",
     splashImgSrc: GlassSplashImg,
   };
-  return <FeaturesSideImageBaseSection {...featuresSectionProps} />;
+  return <FeaturesSideImageSection {...featuresSectionProps} />;
 };
 
 export const FeaturesSideColorImageSection = () => {
@@ -147,5 +154,5 @@ export const FeaturesSideColorImageSection = () => {
     splashImgSide: "left",
     splashImgSrc: ColorSplashImg,
   };
-  return <FeaturesSideImageBaseSection {...featuresSectionProps} />;
+  return <FeaturesSideImageSection {...featuresSectionProps} />;
 };

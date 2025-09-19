@@ -2,13 +2,19 @@ import githubLogo from "~/assets/logos/github.svg";
 import linkedinLogo from "~/assets/logos/linkedin.svg";
 import instagramLogo from "~/assets/logos/instagram.svg";
 import twitterLogo from "~/assets/logos/twitter.svg";
+import profiles from "~/features/forum/assets/profile";
 
 export type ProfileCardProps = {
-  profileImg: string;
-  fullname: string;
-  jobTitle: string;
-  headline: string;
-  company: string;
+  /** Profile image of the user */
+  profileImg?: string;
+  /** Full name of the user */
+  fullname?: string;
+  /** Username handle of the user */
+  jobTitle?: string;
+  /** Headline of the user */
+  headline?: string;
+  /** Company where user works as employees */
+  company?: string;
 };
 
 const socialLogos = [
@@ -30,12 +36,17 @@ const socialLogos = [
   },
 ];
 
+const defaultHeadline = `
+I turn coffee into bugs which are fixed by someone else.
+Certified Stack Overflow and ChatGPT developer.
+`;
+
 export const ProfileCard = ({
-  profileImg,
-  fullname,
-  jobTitle,
-  headline,
-  company,
+  profileImg = profiles.sarahdole,
+  fullname = "Sarah Dole",
+  jobTitle = "Front End Engineer",
+  headline = defaultHeadline,
+  company = "Microsoft",
 }: ProfileCardProps) => {
   return (
     <div className="card w-[340px] overflow-hidden rounded-2xl bg-white px-4 py-8">

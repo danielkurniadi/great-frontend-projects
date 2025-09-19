@@ -1,9 +1,9 @@
 import { RiCheckLine } from "@remixicon/react";
-import prismImg from "~/assets/landing/hero-feature-prism.png";
+import prismImg from "~/features/marketing/assets/hero-feature-prism.png";
 
 export const HeroFeatureSection = () => {
   return (
-    <section className="flex flex-col gap-12 rounded-lg bg-white px-4 py-12 md:py-16 lg:flex-row lg:p-24">
+    <div className="flex flex-col gap-12 rounded-lg bg-white px-4 py-12 md:py-16 lg:flex-row lg:p-24">
       <div className="flex flex-none flex-col items-start justify-center gap-8 md:gap-16 lg:w-[480px]">
         <h1 className="text-4xl font-semibold md:text-5xl lg:text-6xl">Premium abstract images</h1>
         <ul className="flex flex-col gap-5">
@@ -52,6 +52,6 @@ export const HeroFeatureSection = () => {
           alt="Premium abstract prism image showcasing high-quality visual content"
         />
       </div>
-    </section>
+    </div>
   );
 };
