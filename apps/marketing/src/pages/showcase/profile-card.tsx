@@ -1,8 +1,8 @@
-import { ProfileCard, type ProfileCardProps } from "~/components/ui/profile-card";
-import profileImg from "~/assets/profile-pics/profile-sarahdole.jpg";
+import { ProfileCard } from "~/features/forum/components/profile-card/profile-card";
+import profiles from "~/features/forum/assets/profile";
 
-const defaultCardData: ProfileCardProps = {
-  profileImg,
+const defaultCardData = {
+  profileImg: profiles.sarahdole,
   company: "Microsoft",
   fullname: "Sarah Dole",
   headline:

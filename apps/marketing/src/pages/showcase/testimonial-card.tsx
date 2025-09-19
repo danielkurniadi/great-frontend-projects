@@ -1,6 +1,9 @@
-import { TestimonialCard, type TestimonialCardProps } from "~/components/ui/testimonial-card";
+import {
+  TestimonialCard,
+  type TestimonialCardProps,
+} from "~/features/marketing/components/testimonial-card/testimonial-card";
 
-import profileImg from "~/assets/profile-pics/profile-sarahdole.jpg";
+import profileImg from "~/features/forum/assets/profile/profile-sarahdole.jpg";
 
 const defaultCardData: TestimonialCardProps = {
   profileImg,

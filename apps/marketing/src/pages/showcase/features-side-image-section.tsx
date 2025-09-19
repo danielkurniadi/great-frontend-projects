@@ -1,11 +1,11 @@
 import {
   FeaturesSideColorImageSection,
   FeaturesSideGlassImageSection,
-} from "~/pages/landing/sections/features-side-image-section";
+} from "~/features/marketing/components/features-side-img-section/features-side-img-section";
 
 export const FeaturesGlassSectionShowcase = () => {
   return (
-    <section className="lg:max-[1440px] mx-auto p-4">
+    <section className="mx-auto max-w-[1440px] bg-gray-50 p-4">
       <FeaturesSideGlassImageSection />
     </section>
   );
@@ -13,7 +13,7 @@ export const FeaturesGlassSectionShowcase = () => {
 
 export const FeaturesColorSectionShowcase = () => {
   return (
-    <section className="lg:max-[1440px] mx-auto p-4">
+    <section className="mx-auto max-w-[1440px] bg-gray-50 p-4">
       <FeaturesSideColorImageSection />
     </section>
   );
