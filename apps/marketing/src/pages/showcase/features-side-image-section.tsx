@@ -18,3 +18,26 @@ export const FeaturesColorSectionShowcase = () => {
     </section>
   );
 };
+
+// Replace your-framework with the framework you are using, e.g. react-vite, nextjs, vue3-vite, etc.
+import type { StorybookConfig } from "@storybook/react-vite";
+
+const config: StorybookConfig = {
+  framework: "@storybook/your-framework",
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+
+  // Storybook Composition. See https://storybook.js.org/docs/sharing/storybook-composition
+  refs: (_, { configType }) => {
+    const marketingStorybookUrl =
+      configType === "DEVELOPMENT" ? "http://localhost:7007" : "marketing/";
+    // add more sub-storybook ...
+    return {
+      marketing: {
+        title: "Marketing Storybook",
+        url: marketingStorybookUrl,
+      },
+    };
+  },
+};
+
+export default config;

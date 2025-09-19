@@ -10,7 +10,11 @@
     "test": "echo \"No tests yet\"",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "storybook": "storybook dev -p 7006",
+    "storybook:build": "storybook build --quiet",
+    "storybook:move": "mv storybook-static ../../storybook-static/marketing",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@remixicon/react": "^4.6.0",
@@ -27,6 +31,8 @@
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "@repo/eslint-config": "workspace:*",
+    "@storybook/addon-themes": "^9.1.6",
+    "@storybook/react-vite": "^9.1.6",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
@@ -34,6 +40,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "storybook": "^9.1.6",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
