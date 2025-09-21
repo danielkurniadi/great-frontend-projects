@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+"use client";
 
 export interface ButtonProps {
   label?: string;
