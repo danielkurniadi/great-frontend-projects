@@ -12,7 +12,7 @@ const meta = {
   decorators: [
     // Showcase layout to get >= 90% similarity score in Greatfrontend challenge submission.
     (Story) => (
-      <section className="flex h-screen flex-col items-center bg-gray-200">
+      <section className="flex h-screen flex-col items-center bg-gray-200 p-4">
         <div className="mx-auto flex items-center overflow-x-auto py-[200px] align-top">
           <Story />
         </div>
