@@ -61,7 +61,7 @@ const NewsletterEmailForm = ({ onShowToast }: NewsletterEmailFormProps) => {
             type="submit"
             value="Subscribe"
             className={cn(
-              "h-10 rounded-md bg-indigo-700 px-4 py-2 text-sm font-semibold text-white shadow-sm md:w-24",
+              "h-10 rounded-md bg-indigo-700 px-4 py-2 text-sm font-medium text-white shadow-sm md:w-24",
               "cursor-pointer hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2",
             )}
           />
@@ -72,7 +72,7 @@ const NewsletterEmailForm = ({ onShowToast }: NewsletterEmailFormProps) => {
           </p>
         )}
       </div>
-      <p id="helper-text-explanation" className="mt-2 text-sm text-neutral-500">
+      <p id="helper-text-explanation" className="mt-4 text-sm text-neutral-500">
         We'll never share your details. Read our
         <a
           target="_blank"
@@ -160,18 +160,13 @@ export const NewsletterSection = () => {
         </div>
       </div>
 
-      <div className="px-3 py-8 md:px-4 md:py-16 xl:px-16 xl:py-24">
-        <div className="flex flex-col items-center justify-between gap-4 self-stretch md:gap-16 xl:flex-row xl:gap-8">
-          <div className="xl:w-xl flex grow flex-col gap-12">
-            <NewsletterSideHeader />
-            <NewsletterEmailForm onShowToast={handleShowToast} />
-          </div>
-          {/* Side section Image */}
-          <img
-            className="aspect-6/5 w-full self-stretch rounded-xl md:aspect-square md:h-[608px] xl:w-[608px]"
-            src={newsletterImg}
-          />
+      <div className="flex flex-col items-center justify-between gap-4 self-stretch md:gap-16 lg:gap-8 xl:flex-row">
+        <div className="xl:w-xl grow-1 flex flex-col gap-12">
+          <NewsletterSideHeader />
+          <NewsletterEmailForm onShowToast={handleShowToast} />
         </div>
+        {/* Side section Image */}
+        <img className="self-stretch rounded-xl lg:max-h-[600px] lg:grow-0" src={newsletterImg} />
       </div>
     </div>
   );

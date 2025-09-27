@@ -65,9 +65,10 @@ export const FeaturesGridSection = (props: FeaturesGridSectionProps) => {
   const { sectionTitle, sectionSubtitle, sectionHeader, features } = { ...props, ...defaultProps };
 
   return (
-    <div className="flex flex-col gap-16 self-stretch bg-white px-3 py-12 md:px-4 md:py-16 lg:p-24">
+    // Section outer: px-3 py-12 md:px-4 md:py-16 lg:p-24
+    <div className="flex flex-col gap-16 self-stretch bg-white">
       {/* Header part */}
-      <div className="lg;px-40 flex flex-col gap-5 self-stretch md:px-10">
+      <div className="flex flex-col gap-5 self-stretch md:px-10 lg:px-40">
         <div className="flex flex-col justify-center gap-3 self-stretch px-10">
           <span className="text-center text-base font-semibold text-indigo-700">
             {sectionSubtitle}
@@ -76,9 +77,9 @@ export const FeaturesGridSection = (props: FeaturesGridSectionProps) => {
             {sectionTitle}
           </span>
         </div>
-        <span className="text-center text-lg font-normal text-neutral-600 md:text-xl">
+        <p className="text-center text-lg font-normal text-neutral-600 md:text-xl">
           {sectionHeader}
-        </span>
+        </p>
       </div>
 
       <div className="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12">

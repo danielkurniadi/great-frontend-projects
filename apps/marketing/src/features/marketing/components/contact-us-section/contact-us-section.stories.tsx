@@ -10,8 +10,8 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <section className="h-full min-h-screen w-full bg-gray-50 p-3">
-        <div className="lg:pt-18 w-full rounded bg-white p-1 md:pt-10">
+      <section className="h-full min-h-screen w-full bg-gray-50 p-4">
+        <div className="w-full rounded bg-white px-3 py-12 xl:p-24">
           <Story />
         </div>
       </section>

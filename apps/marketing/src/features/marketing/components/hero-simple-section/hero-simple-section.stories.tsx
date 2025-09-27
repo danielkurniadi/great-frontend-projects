@@ -11,7 +11,7 @@ const meta = {
   decorators: [
     (Story) => (
       <section className="flex h-full min-h-screen flex-col bg-gray-500 p-4">
-        <div className="align-top">
+        <div className="px-4 py-12 align-top md:px-4 md:py-16 lg:p-24">
           <Story />
         </div>
       </section>

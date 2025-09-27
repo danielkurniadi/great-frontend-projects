@@ -81,7 +81,7 @@ const FAQAccordion = ({ item, last = false }: { item: FAQItem; last?: boolean })
 
 export const FAQSection = ({ items: questions = ExampleFAQItems }: FAQSectionProp) => {
   return (
-    <div className="bg-white px-4 py-12 md:px-4 md:py-16 lg:py-24 xl:px-24">
+    <div className="bg-white">
       <div className="flex flex-col gap-12 md:gap-16">
         <div className="flex w-full flex-col items-center justify-center gap-5 rounded-md text-center">
           <h1 className="self-stretch text-3xl font-semibold md:text-5xl lg:text-5xl">

@@ -42,7 +42,7 @@ export const FeaturesSideImageSection = ({
   features = [],
 }: FeaturesSideImageSectionProps) => {
   return (
-    <div className="w-full self-stretch rounded-lg bg-white px-3 py-12 md:px-4 md:py-16 lg:p-24">
+    <div className="w-full self-stretch rounded-lg">
       <div className="flex flex-col items-center justify-center gap-12 self-stretch rounded-lg lg:gap-16">
         <div className="header flex flex-col gap-5 self-stretch lg:px-40">
           <div className="flex flex-col justify-center gap-3 self-stretch lg:px-10">
