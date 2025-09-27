@@ -23,7 +23,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const NewsletterSectionStory: Story = {
+export const FooterSectionStory: Story = {
   render: FooterSection,
   args: {},
 };

@@ -10,11 +10,12 @@ import { HeroSection } from "~/features/marketing/components/hero-simple-section
 import { LogoMarqueeSection } from "~/features/marketing/components/logo-marquee";
 import { Navbar } from "~/features/marketing/components/navbar";
 import { NewsletterSection } from "~/features/marketing/components/newsletter-section/newsletter-section";
+import { PricingTierSection } from "~/features/marketing/components/pricing-tier-section";
 
 export const MarketingLandingPage = () => {
   return (
     <>
-      <section className="mb-4">
+      <section className="mx-auto mb-4 xl:max-w-[1408px]">
         <Navbar />
       </section>
       <div className="mx-auto rounded-lg bg-white xl:max-w-[1408px]">
@@ -32,6 +33,9 @@ export const MarketingLandingPage = () => {
         </section>
         <section className="px-3 py-12 md:px-4 md:py-16 lg:p-24">
           <FeaturesSideColorImageSection />
+        </section>
+        <section className="px-3 py-12 align-top md:px-4 md:py-16 lg:p-24">
+          <PricingTierSection />
         </section>
         <section className="px-4 py-12 md:px-4 md:py-16 lg:py-24 xl:px-24">
           <FAQSection items={ExampleFAQItems} />
