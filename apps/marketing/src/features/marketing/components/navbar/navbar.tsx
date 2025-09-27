@@ -63,7 +63,7 @@ const MobileNav = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
           <a
             key={`link-${idx}-${link.href}`}
             href={link.href}
-            className="rounded px-3 py-2 text-sm font-normal text-neutral-900 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+            className="border-b-2 border-neutral-300 px-3 py-2 text-sm font-normal text-neutral-900 focus:outline-none focus:ring-4 focus:ring-neutral-300/20"
           >
             {link.title}
           </a>

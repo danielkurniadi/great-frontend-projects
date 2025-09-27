@@ -10,7 +10,7 @@ export const FooterSection = () => {
   const footerNavItems = [
     {
       id: "footer-nav-feature",
-      label: "Feature",
+      label: "Features",
       href: "#",
     },
     {
@@ -39,14 +39,14 @@ export const FooterSection = () => {
   ];
 
   return (
-    <div className="mx-auto flex h-full flex-col justify-center md:px-8 md:py-16">
+    <div className="mx-auto flex h-full flex-col justify-center">
       <div className="flex flex-col gap-8">
-        <div className="flex justify-center gap-2 sm:gap-4">
+        <div className="flex justify-center sm:gap-4">
           {footerNavItems.map(({ id, label, href }) => {
             return (
               <button key={id} type="button" className="bg-none px-1">
                 <a key={id} href={href} className="w-full cursor-pointer">
-                  <span className="text-sm font-medium text-neutral-600">{label}</span>
+                  <span className="text-sm font-medium text-neutral-500">{label}</span>
                 </a>
               </button>
             );

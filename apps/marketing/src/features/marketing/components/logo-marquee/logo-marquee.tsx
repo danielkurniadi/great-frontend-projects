@@ -74,22 +74,22 @@ const LogosSegment = ({
 
 export const LogoMarqueeSection = () => {
   return (
-    <section
+    // my-64
+    <div
       aria-describedby="logo-marquee-section"
-      className="my-64 w-full rounded bg-white px-0 py-1 md:rounded-md md:px-2"
+      className="w-full rounded bg-white px-0 py-1 md:rounded-md md:px-2"
     >
-      <div className="flex flex-col gap-8 px-4 py-12 md:py-16 lg:py-24">
-        <h2 className="text-center text-base font-medium text-neutral-600">
-          Used by teams that you love
-        </h2>
-        <div className="overflow-hidden">
-          <div className="group flex gap-[78.5px] space-x-16 md:gap-2">
-            <LogosSegment logoImages={logoImages} />
-            <LogosSegment logoImages={logoImages} />
-            <LogosSegment logoImages={logoImages} />
-          </div>
+      {/* <div className="flex flex-col gap-8 px-4 py-12 md:py-16 lg:py-24"> */}
+      <h2 className="text-center text-base font-medium text-neutral-600">
+        Used by teams that you love
+      </h2>
+      <div className="overflow-hidden">
+        <div className="group flex gap-[78.5px] space-x-16 md:gap-2">
+          <LogosSegment logoImages={logoImages} />
+          <LogosSegment logoImages={logoImages} />
+          <LogosSegment logoImages={logoImages} />
         </div>
       </div>
-    </section>
+    </div>
   );
 };

@@ -22,6 +22,11 @@
     padding: 0;
     height: 100vh;
   }
+
+  body {
+    background-color: #f9fafb;
+    padding: 16px;
+  }
 }
 
 @layer utilities {

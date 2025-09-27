@@ -214,7 +214,7 @@ export const ContactUsSection = () => {
           />
         </div>
       </div>
-      <div className="mx-auto flex items-center gap-16 self-stretch px-3 py-12 xl:p-24">
+      <div className="mx-auto flex items-center gap-16 self-stretch">
         <div className="flex max-w-7xl grow flex-col justify-center gap-12 xl:flex-row">
           <ContactUsHeader />
           {isSubmitted ? (

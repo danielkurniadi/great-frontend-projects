@@ -1,1 +1,1 @@
-export { FAQSection, type FAQSectionProp } from "./faq-section";
+export { FAQSection, ExampleFAQItems, type FAQSectionProp } from "./faq-section";
