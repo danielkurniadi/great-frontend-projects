@@ -88,48 +88,35 @@ const NewsletterEmailForm = ({ onShowToast }: NewsletterEmailFormProps) => {
 };
 
 const NewsletterSideHeader = () => {
+  const newsletterFeatures = [
+    "Exclusive access to new abstract images and collections",
+    "Unlock special promotions only for subscribers",
+    "Regular doses of artistic inspiration",
+  ];
+
   return (
     <div className="flex flex-col gap-8 self-stretch md:gap-16">
       <span className="text-3xl font-semibold text-neutral-900 md:text-5xl xl:text-5xl">
         Get the finest curated abstracts delivered weekly to your inbox
       </span>
       <div className="flex flex-col gap-5 self-stretch">
-        <div className="flex items-center gap-3 self-stretch">
-          <div className="h-6 w-6 rounded-full bg-indigo-50">
-            <RiCheckLine size={20} className="mx-auto my-0.5 text-indigo-500" />
-          </div>
-          <div className="flex grow flex-col justify-center gap-3">
-            <div className="flex flex-col justify-center gap-3 self-stretch">
-              <span className="text-lg font-normal text-neutral-600">
-                Exclusive access to new abstract images and collections
-              </span>
+        {newsletterFeatures.map((feature, idx) => {
+          return (
+            <div
+              key={`newsletter-features-list-item-${idx}`}
+              className="flex items-center gap-3 self-stretch"
+            >
+              <div className="h-6 w-6 rounded-full bg-indigo-50">
+                <RiCheckLine size={20} className="mx-auto my-0.5 text-indigo-500" />
+              </div>
+              <div className="flex grow flex-col justify-center gap-3">
+                <div className="flex flex-col justify-center gap-3 self-stretch">
+                  <span className="text-lg font-normal text-neutral-600">{feature}</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="flex items-center gap-3 self-stretch">
-          <div className="h-6 w-6 rounded-full bg-indigo-50">
-            <RiCheckLine size={20} className="mx-auto my-0.5 text-indigo-500" />
-          </div>
-          <div className="flex grow flex-col justify-center gap-3">
-            <div className="flex flex-col justify-center gap-3 self-stretch">
-              <span className="text-lg font-normal text-neutral-600">
-                Unlock special promotions only for subscribers
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center gap-3 self-stretch">
-          <div className="h-6 w-6 rounded-full bg-indigo-50">
-            <RiCheckLine size={20} className="mx-auto my-0.5 text-indigo-500" />
-          </div>
-          <div className="flex grow flex-col justify-center gap-3">
-            <div className="flex flex-col justify-center gap-3 self-stretch">
-              <span className="text-lg font-normal text-neutral-600">
-                Regular doses of artistic inspiration
-              </span>
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </div>
     </div>
   );
